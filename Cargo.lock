@@ -746,7 +746,7 @@ checksum = "241eaef5fd12c88705a01fc1066c48c4b36e0dd4377dcdc7ec3942cea7a69956"
 [[package]]
 name = "llvm-bundler-rs"
 version = "0.0.2"
-source = "git+https://github.com/marcantoinem/llvm-bundler-rs#59d98e725b663734a1b97205444c52c0793fd570"
+source = "git+https://github.com/marcantoinem/llvm-bundler-rs#9661118699a22e18c301b8f9ff72eaa5293aeb7e"
 dependencies = [
  "bytes",
  "dirs",
