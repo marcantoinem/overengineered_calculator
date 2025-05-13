@@ -61,7 +61,6 @@ fn main() -> Result<(), Box<dyn Error>> {
     let pass_manager = PassManager::new(&context);
     pass_manager.enable_verifier(true);
     pass_manager.add_pass(pass::transform::create_canonicalizer());
-    pass_manager.add_pass(pass::conversion::create_arith_to_llvm());
     pass_manager.add_pass(pass::conversion::create_control_flow_to_llvm());
     pass_manager.add_pass(pass::conversion::create_to_llvm());
     pass_manager.enable_ir_printing(&PassIrPrintingOptions {
@@ -76,7 +75,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     pass_manager.run(&mut module).unwrap();
 
     assert!(module.as_operation().verify());
-    let engine = ExecutionEngine::new(&module, 0, &[], true);
+    let engine = ExecutionEngine::new(&module, 3, &[], true);
 
     let mut argument1: f64 = 2.0;
     let mut argument2: f64 = 4.0;

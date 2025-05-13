@@ -827,7 +827,7 @@ dependencies = [
 [[package]]
 name = "mlir-sys"
 version = "0.5.0"
-source = "git+https://github.com/marcantoinem/mlir-sys?branch=bundled#739ce5621cb4765f5455bd862332c1bcff95f613"
+source = "git+https://github.com/marcantoinem/mlir-sys?branch=bundled#8454bafcad3632da07145077795bc59bcaf410e4"
 dependencies = [
  "bindgen",
  "llvm-bundler-rs",
@@ -1374,7 +1374,7 @@ dependencies = [
 [[package]]
 name = "tblgen"
 version = "0.6.0"
-source = "git+https://github.com/marcantoinem/tblgen-rs?branch=bundled#62256c009c674f01bc7c78dbcefe9650ab97bf3d"
+source = "git+https://github.com/marcantoinem/tblgen-rs?branch=bundled#97e2fd94726f3ca484fd2ae78db38e26f2e167f4"
 dependencies = [
  "bindgen",
  "cc",
